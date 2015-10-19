@@ -1,1 +1,3 @@
-addSbtPlugin("com.qifun" % "sbt-haxe" % "1.3.0")
+lazy val root = project in file(".") dependsOn `sbt-haxe`
+
+lazy val `sbt-haxe` = RootProject(uri("https://github.com/ThoughtWorksInc/sbt-haxe#haxe-macro"))
